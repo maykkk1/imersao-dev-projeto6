@@ -1,0 +1,127 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  margin: 15px auto;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+}
+
+form input {
+  font-size: 1.5rem;
+  width: 200px;
+  height: 1.6rem;
+}
+
+#playerPhoto {
+    width: 350px;
+}
+
+form button {
+  box-shadow: inset 0px 1px 3px 0px #000000;
+  background: linear-gradient(to bottom, #090447 5%, #000000 100%);
+  background-color: #090447;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #000000;
+}
+form button:hover {
+  background: linear-gradient(to bottom, #000000 5%, #090447 100%);
+  background-color: #000000;
+}
+form button:active {
+  position: relative;
+  top: 1px;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.playerAvatar {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+
+.playerAvatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

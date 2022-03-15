@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabelo de Classificação</title>
+  </head>
+  <body>
+    <h1>Tabela de classificação</h1>
+    <h2>Adicionar jogador</h2>
+    <form>
+        <label for="playerName">Nome do Jogador</label>
+        <input type="text" id="playerName">
+        <label for="playerPhoto">Foto do jogador</label>
+        <input type="text" id="playerPhoto">
+        <button type="button" id="addPlayerBtn">Adicionar</button>
+    </form>
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>Vitórias</th>
+          <th>Empates</th>
+          <th>Derrotas</th>
+          <th>Pontos</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaJogadores">
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
