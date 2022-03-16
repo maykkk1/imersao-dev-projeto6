@@ -48,3 +48,29 @@ const addPlayerBtn = document.getElementById("addPlayerBtn");
 addPlayerBtn.addEventListener("click", function () {
   addPlayer();
 });
+
+const validatePlayer = (playerName) => {
+  if (
+    playerList.filter((element) => {
+      return element.name === playerName;
+    }).length > 0
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const register = () => {
+  const playerOne = document.getElementById("playerOne").value;
+  const playerTwo = document.getElementById("playerTwo").value;
+  if (
+    validatePlayer(playerOne) &&
+    validatePlayer(playerTwo) &&
+    playerOne != playerTwo
+  ) {
+    console.log("FUNCIONEI CARAI");
+  } else {
+    console.log("NÃO FUNCIONEI CARAI");
+  }
+};

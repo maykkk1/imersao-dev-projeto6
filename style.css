@@ -78,7 +78,7 @@ form input {
 }
 
 #playerPhoto {
-    width: 350px;
+  width: 350px;
 }
 
 form button {
@@ -115,13 +115,86 @@ td {
 }
 
 .playerAvatar {
-    width: 100px;
-    height: 100px;
-    padding: 0;
+  width: 100px;
+  height: 100px;
+  padding: 0;
 }
 
 .playerAvatar img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.GamePanel {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.459);
+  margin: 15px auto;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.GamePanel input {
+  width: 200px;
+  height: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.GamePanel button {
+  box-shadow: inset 0px 1px 3px 0px #000000;
+  background: linear-gradient(to bottom, #090447 5%, #000000 100%);
+  background-color: #090447;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #000000;
+}
+
+.GamePanel button:hover {
+  background: linear-gradient(to bottom, #000000 5%, #090447 100%);
+  background-color: #000000;
+}
+.GamePanel button:active {
+  position: relative;
+  top: 1px;
+}
+
+.playerSelection {
+  display: flex;
+}
+
+.registerModal {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: absolute;
+  justify-content: center;
+  z-index: 10;
+  gap: 15px;
+  display: none;
+}
+
+.registerModal h2 {
+  color: black;
 }

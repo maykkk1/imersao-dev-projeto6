@@ -11,11 +11,11 @@
     <h1>Tabela de classificação</h1>
     <h2>Adicionar jogador</h2>
     <form>
-        <label for="playerName">Nome do Jogador</label>
-        <input type="text" id="playerName">
-        <label for="playerPhoto">Foto do jogador</label>
-        <input type="text" id="playerPhoto">
-        <button type="button" id="addPlayerBtn">Adicionar</button>
+      <label for="playerName">Nome do Jogador</label>
+      <input type="text" id="playerName" />
+      <label for="playerPhoto">Foto do jogador</label>
+      <input type="text" id="playerPhoto" />
+      <button type="button" id="addPlayerBtn">Adicionar</button>
     </form>
     <table style="width: 100%">
       <thead>
@@ -28,9 +28,30 @@
           <th>Pontos</th>
         </tr>
       </thead>
-      <tbody id="tabelaJogadores">
-      </tbody>
+      <tbody id="tabelaJogadores"></tbody>
     </table>
+
+    <div class="GamePanel">
+      <h2>Gerenciar Tabela</h2>
+      <div class="playerSelection">
+        <div>
+          <label for="playerOne">Jogador 1</label>
+          <input id="playerOne" type="text" />
+        </div>
+        <div>
+          <label for="playerOne">Jogador 2</label>
+          <input id="playerTwo" type="text" />
+        </div>
+      </div>
+      <button onclick="register()">Registrar</button>
+      <button>Empate</button>
+      <div class="registerModal">
+          <h2>Quem ganhou?</h2>
+          <button>Jogador 1</button>
+          <button>Jogador 2</button>
+      </div>
+    </div>
+
 
     <script src="script.js"></script>
   </body>
