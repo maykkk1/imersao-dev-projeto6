@@ -1,4 +1,4 @@
-# DESAFIO 1 da imersão _DEV
+# DESAFIO 6 da imersão _DEV
 
 ## Tabela de Classificação 
 ## Link do codepen: https://codepen.io/maykkk1/pen/RwxPjKN
