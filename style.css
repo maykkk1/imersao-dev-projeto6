@@ -150,6 +150,12 @@ td {
   font-size: 1.5rem;
 }
 
+#registerError {
+  font-size: 13px;
+  color: red;
+  opacity: 0;
+}
+
 .GamePanel button {
   box-shadow: inset 0px 1px 3px 0px #000000;
   background: linear-gradient(to bottom, #090447 5%, #000000 100%);
@@ -180,14 +186,14 @@ td {
   display: flex;
 }
 
-.registerModal {
+#registerModal {
   color: black;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #645e5e;
   position: absolute;
   justify-content: center;
   z-index: 10;
@@ -195,6 +201,11 @@ td {
   display: none;
 }
 
-.registerModal h2 {
+#registerModal h2 {
   color: black;
+}
+
+#registerModal button {
+  width: 150px;
+  text-transform: uppercase;
 }

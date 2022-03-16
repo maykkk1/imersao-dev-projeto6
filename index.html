@@ -16,6 +16,7 @@
       <label for="playerPhoto">Foto do jogador</label>
       <input type="text" id="playerPhoto" />
       <button type="button" id="addPlayerBtn">Adicionar</button>
+      <button type="button" onclick="resetScores()">Zerar pontos</button>
     </form>
     <table style="width: 100%">
       <thead>
@@ -34,6 +35,7 @@
     <div class="GamePanel">
       <h2>Gerenciar Tabela</h2>
       <div class="playerSelection">
+        
         <div>
           <label for="playerOne">Jogador 1</label>
           <input id="playerOne" type="text" />
@@ -43,16 +45,18 @@
           <input id="playerTwo" type="text" />
         </div>
       </div>
+      <p id="registerError">
+        Algo deu errado! Verifique se digitou o nome dos jogadores
+        corretamente.
+      </p>
       <button onclick="register()">Registrar</button>
-      <button>Empate</button>
-      <div class="registerModal">
-          <h2>Quem ganhou?</h2>
-          <button>Jogador 1</button>
-          <button>Jogador 2</button>
+      <button onclick="drawMatch()">Empate</button>
+      <div id="registerModal">
+        <h2>Quem ganhou?</h2>
+        <button id="whenPlayerOneWins"></button>
+        <button id="whenPlayerTwoWins"></button>
       </div>
     </div>
-
-
     <script src="script.js"></script>
   </body>
 </html>
